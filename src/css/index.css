@@ -1,0 +1,612 @@
+
+@import "./common/libs/swiper/animate.min";
+@import "./common/libs/swiper/swiper.min";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  width: 100%;
+    height: 100%;
+    font-family: Microsoft YaHei;
+}
+
+ /*  @media screen and(max-width:320px) {
+      #main-container{
+        height: 1024px;
+
+    }  
+    body{
+      height: 568px;
+    }
+  } */
+  @media all and(min-width:320px)and(max-width:767px) {
+   /*    #main-container{
+        height: 1024px;
+
+    }   */
+    body{
+      height: 568px;
+    }
+  }
+    @media all and(min-width:768px)and(max-width:1080px) {
+   /*    #main-container{
+        height: 1024px;
+
+    }   */
+    body{
+      height: 960px;
+    }
+  }
+
+.wu{
+  margin-left: -128px;
+}
+#main-container{
+  width: 100%;
+  /* height: 100%; */
+  height: 568px;
+  background:url(../img/beijing.png) center no-repeat;
+  background-size: cover;
+}
+
+/* #enter{
+  transition: background 2s ease-in 5s,height 2s ease-out 15,width 3s ease-out 20s;
+}
+#enter:hover{
+  width: 100px;
+  height: 100px;
+  color: red;
+  background: yellow;
+   margin-left:300px;
+}  */
+/*hover pc端无效 */
+.swiper-container {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0px auto;
+
+   
+  
+}
+
+/* .swiper-slide {
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+   
+} */
+
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+}
+.sectwo{
+      margin-top: -125px;
+}
+.pageone{
+  /* background: url(../img/pic1.jpg) center no-repeat ;  */
+  background-size:cover;
+  height: 568px;
+  /* line-height: 100%; */
+  /* height: 100%; */
+  width: 100%;
+  /* background:cover; */
+  display: flex;
+  flex-direction:column;
+
+  color: blue;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+  background: black;
+
+ 
+   
+}
+
+
+
+
+
+.pageone>section{
+    flex:1;
+    display: flex;
+    width: 100%;
+     flex-direction:row;
+     align-items: center;
+}
+.pageone>section>div{
+    flex:1;
+    
+   
+}
+.pageone>div{
+
+    flex:1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.done{
+    font-size: 40px;
+}
+.pageone>div img{
+  height: 142px;
+     animation-name:donghua3; 
+   animation-duration:6s;
+   animation-timing-function:ease;
+  /* animation-delay:0s; */
+   animation-iteration-count:infinite;
+}
+@keyframes donghua3{
+  0%{
+      
+      margin-left:200px;
+  }
+  50%{
+    
+    margin-top:200px;
+  }
+  75%{
+     
+       margin-right:200px;
+  }
+  100%{
+      margin-right:200px;
+  }
+}
+/* 第二部分 */
+.pagetwo{
+     background: url(../img/imgone.png) center no-repeat ; 
+      background-size: 100% 100%;
+      height: 568px;
+      width: 100%;
+    /* display: flex; */
+    /* flex-direction:column; */
+    color: red;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+.pagetwo .waitwo div{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #AAB3C3;
+    color:black;
+    border: 1px solid black; 
+    text-align: center;
+}
+.pagetwo .waitwo{
+    border: 5px solid #666;
+   position: absolute;
+
+   animation-name:donghua; 
+   animation-duration:10s;
+   animation-timing-function:ease;
+  /* animation-delay:0s; */
+   animation-iteration-count:1;
+    animation-direction:alternate;
+    animation-fill-mode:both;
+   /*  animation-name:donghua;
+    animation-duration:10s; */
+  /* 等待很长时间才执行,0%和100%;可以定格到这2个位置,不能链式变化,都是同时的,否则又回到原图了*/
+}
+
+@keyframes donghua{
+
+  0%{top:0px;left:0;margin-left:0;width: 100%;height:500px; }
+  50%{top:75px;left: 15%;margin-left:-7%;width: 80%;height: 500px;} 
+  75%{
+    top:150px;lfet:35%;margin-left:-14%;width: 65%;
+  }
+  100%{
+        top:200px;
+        left: 50%;
+        margin-left: -25%;
+        width: 50%;
+        height: 200px; 
+  }
+}
+
+  
+
+.pagetwo .divone{
+    text-align: center;
+    top: 0px;
+   
+}
+.pagetwo .divtwo{
+
+  
+    top: 50px;
+}
+
+.pagetwo .divthree{
+
+
+    top: 100px;
+}
+
+.pagetwo .divfour{
+
+
+    top: 150px;
+}
+.pagetwo .divfour1{
+    top: 200px;
+}
+
+/* .第三部 */
+
+.pagethree{
+     background: url(../img/pic2.jpg) center no-repeat ; 
+      background-size: 100% 100%;
+      height: 568px;
+      width: 100%;
+    /* display: flex;
+    flex-direction:column; */
+    color: red;
+    position: relative;
+    left: 0;
+    top:0;
+}
+.pagethree .waisan>div{
+  width: 100%;
+   /* position: absolute; */
+    display: flex;
+    flex-direction:row;
+    margin-bottom:10px;
+
+
+  }
+  .pagethree .waisan .divone{
+      
+        margin-top: 100px;
+
+
+  }
+   .pagethree .waisan p{
+  flex:2;
+ display: flex;
+ justify-content:center;
+
+  
+}
+.pagethree .waisan img{
+    height: 50px;
+    
+  
+}
+
+.pagethree .waisan>div>div{
+    flex:8;
+    padding-left: 20px;
+     display: flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 20px;
+}
+
+
+
+/* 最后一部分 */
+
+.pagefour{
+   background: url(../img/pic13.gif) center no-repeat ; 
+    background-size: 100% 100%;
+    height: 568px;
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction:column; */
+  position: relative;
+}
+.pagefour .divone{
+  width: 142px;
+  height: 142px;
+  /* background:red; */
+  position: absolute;
+  left: 30%;
+  /* left:44px; */
+  /* margin:0 auto; */
+  top: 15%;
+  animation-name:donghuat; 
+   animation-duration:20s;
+   animation-timing-function:linear;
+  /* animation-delay:0s; */
+   animation-iteration-count:infinite;
+    /* animation-direction:alternate; */
+    /* animation-fill-mode:both; */
+  
+}
+
+@keyframes donghuat{
+  0%{
+      transform:rotate(0deg)
+  }
+  50%{
+    transform:rotate(-180deg)
+  }
+  100%{
+      transform:rotate(-360deg);
+  }
+}
+.pagefour .divone>div{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: red;
+  background: blue;
+  border-radius: 33px;
+}
+.pagefour .divone img{
+  height: 100%;
+  width: 142px;
+
+}
+.pagefour .divone .div1{
+
+    position: absolute;
+    top:-45px;
+    left: 51px;
+}
+.pagefour .divone .div2{
+    position: absolute;
+   top:51px;
+    right: -45px;
+}
+.pagefour .divone .div3{
+    position: absolute;
+    bottom:-45px;
+    left: 51px;
+}
+.pagefour .divone .div4{
+    position: absolute;
+    top:51px;
+    left: -45px;
+}
+
+
+
+
+.pagefour .divtwo{
+  width: 100px;
+  height: 100px;
+  /* position: relative; */
+  /* top: 50px; */
+  /* margin-top:50px; */
+  margin:300px auto;
+  background: green;
+  font-size: 20px;
+  line-height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+  
+
+
+
+/* //主页中 */
+
+  header{
+        width: 100%;
+        height: 40px;
+        background: #222222;
+        color: #F6F9FA;
+        align-items:center;
+        display: flex;
+        /* justify-content:center; */
+        position: fixed;
+        z-index: 5;
+        top:0;
+        left: 0;
+   
+      }
+      header div img{
+        height: 25px;
+      }
+
+      header div:nth-child(1){
+        flex:1;
+        display: flex;
+        justify-content:center;
+      }
+      header div:nth-child(2){
+        display: flex;
+        justify-content:center;
+        flex:5;
+      }
+      header div:nth-child(3){
+        flex:1;
+        display: flex;
+        justify-content:center;
+      }
+      footer{
+    display: flex;
+    flex-direction:row;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    height: 48px;
+    width: 100%;
+     z-index: 5;
+     background: grey;
+     /* text-align: center; */
+  }
+
+  footer {
+    /* width: 320px; */
+    flex:1;
+    display: flex;
+    /* align-items:center; */
+    /* justify-content:center; */
+    flex-direction: row;
+    background: #292E32;
+    color: #9C9C9C;
+  }
+  footer>div{
+    padding:2px 0 2px 0;
+    flex:1;
+    width: 25%;
+    color: black;
+    display: flex;
+    text-align: center; 
+    flex-direction:column;
+
+  }
+  footer>div>div>img{
+    height: 100%;
+    flex:1;
+    /* color: red; */
+  } 
+  footer>div>div{
+    /* height: 100%; */
+    flex:1;
+    height: 50%;
+  }
+   li{
+    list-style: none;
+   }
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  bottom: 48px;
+  left: 0;
+  width: 100%;
+  /* background: #ccc; */
+  overflow: hidden;
+  /* text-align: center; */
+  color: blue;
+}
+
+   .ultwo li{
+  
+    width: 100%;
+    line-height: 33px;
+    /* height: 15px; */
+    font-size: 16px;
+    color: white;
+   
+   }
+
+   .ulone>li{
+   display: flex;
+   flex-direction:row;
+   height: 160px;
+   }
+   .ulone>li div img{
+     width: 100%;
+
+     /* height: 75px; */
+   }
+   .ulone>li div{
+    flex:1;
+    display: flex;
+    align-items:center;
+   }
+   .ulone>li>ul{
+    flex:3;
+    padding-left: 10px;
+    padding-top: 18px;
+   }
+  nav>ul>li{
+     background: url(../img/xian.svg) repeat-x bottom;
+  }
+.ulone{
+  height: 800px;
+}
+/* xiangmu */
+#xiangmu{
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  /* background: red; */
+
+}
+#xiangmu>div>img{
+  position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+    left: 0;
+    top:0;
+}
+
+#xiangmu>ul{
+  position: absolute;
+  top:200px;
+  left: 0; 
+  /* line-height: 24px;  */
+}
+#jing>div>img{
+  position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+    left: 0;
+    top:0;
+}
+
+#jing>ul{
+  text-align: center;
+  position: absolute;
+  top:225px;
+  width: 100%;
+  left: 0;  
+}
+#jing>ul>li{
+  line-height: 44px; 
+}
+h3{
+  color: green;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#me{
+  /* background: grey; */
+  text-align: center;
+  color: white;
+  line-height: 40px;
+  padding:0 20px;
+}
+#me{
+  margin-top: 20px;
+}
+
+#me div img{
+    width: 100%;
+}
+.audio{
+  animation-name:donghuat; 
+   animation-duration:20s;
+   animation-timing-function:linear;
+  /* animation-delay:0s; */
+   animation-iteration-count:infinite;
+  position: fixed;
+  right:20px;
+  top:100px;
+  z-index: 5;
+}
