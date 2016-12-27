@@ -526,7 +526,7 @@ html,body{
      width: 100%;
     margin: 0 16%;
     height: 44%;
-     /* height: 75px; */
+     height: 75px;
    }
    .ulone>#jineng div{
     flex:1;
@@ -673,4 +673,11 @@ _height:568px;
     .pagefour .divtwo{
       margin: 550px auto;
    }
+      .ulone{
+
+
+      min-height:1024px;
+      _height:1024px;
+
+      }
   }

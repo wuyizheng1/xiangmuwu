@@ -43,9 +43,9 @@ $("#enter").tap(function() {
   }, function(data, textStatus, xhr) {
     console.log(data)
     var str = '';
-    for (var i = 0; i < data.length; i++) {
+    for (var i = 0; i < 1; i++) {
 
-      str += '<li><div><img src="' + data[i].img + '"></div><ul class="ultwo"><li>category:' + data[i].category + '</li><li>"name":' + data[i].name + '</li><li>"time":' + data[i].time + ',</li></ul></li>';
+      str += '<h3>欢迎你收看</h3>';
     };
     $(".ulone").html(str);
 
